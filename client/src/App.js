@@ -6,6 +6,7 @@ import Contact from "./containers/Contact/Contact.jsx"
 import ProductDetails from "./containers/ProductDetails/ProductDetails.jsx"
 import Admin from "./containers/Admin/Admin.jsx"
 import NewProduct from "./containers/NewProduct/NewProduct.jsx"
+import NavBar from "./components/NavBar/NavBar.jsx"
 
 
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <NavBar />
         <Switch>
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/about" component={About}></Route>
